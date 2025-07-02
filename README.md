@@ -48,7 +48,7 @@ bug還不少 就是題詞或是有些字詞沒有過濾乾淨(大概用7-8輪對
 
 ### 軟體環境
 - Python 3.10+
-- CUDA 11.8+ 或 12.x
+- CUDA 11.8+ 或 12.x 要自行去官網上裝
 - Windows 10/11
 
 ## 🚀 快速開始
@@ -61,7 +61,7 @@ git clone https://github.com/your-username/rushia-ai.git
 cd rushia-ai
 
 # 安裝依賴套件
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install torch torchvision torchaudio # 先去官網pytorch找好對應的cuda版本安裝
 pip install transformers peft datasets
 pip install discord.py python-dotenv
 pip install opencc jieba requests beautifulsoup4
