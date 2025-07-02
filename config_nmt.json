@@ -1,0 +1,9 @@
+{
+  "model_path": "d:/RushiaMode/models/sakura-14b-qwen2.5-v1.0-iq4xs.gguf",
+  "llama_cpp_path": "d:/RushiaMode/scripts/llama.cpp",
+  "threads": 12,
+  "max_tokens":1024 ,
+  "temperature": 0.4,
+  "sakura_api_url": "http://localhost:8000/v1/chat/completions",
+  "prompt_template": "請將下列日文翻譯成自然且口語化的中文：{input}"
+}

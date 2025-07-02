@@ -1,0 +1,8 @@
+{
+  "llm_model_path": "d:/RushiaMode/models/qwen3-14b-chat.Q4_K_M.gguf",
+  "llm_prompt_template": "你是一位可愛的Vtuber，請根據下列NMT初稿進行個性化潤色：{input}",
+  "max_tokens": 512,
+  "threads": 12,
+  "gpu_layers": 60,
+  "temperature": 0.7
+}
