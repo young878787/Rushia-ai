@@ -330,9 +330,11 @@ python asmr_nmt_translate.py --test
 - **翻譯模型**：Sakura-14B-Qwen2.5-v1.0 (GGUF 格式)
   - 下載連結：[HuggingFace](https://huggingface.co/SakuraLLM/Sakura-14B-Qwen2.5-v1.0-GGUF)
   - 檔案名稱：`sakura-14b-qwen2.5-v1.0-iq4xs.gguf`
+- **LOra模型**：rushia-qwne8B-lora
+- 下載連結：[[GoogleDrive](https://drive.google.com/drive/folders/1l54TzlR1vFtzGMyMp1t1kr2v9t5iKwxy)]
 
 #### 露西亞專用 LoRA 模型：
-- **Rushia LoRA 適配器**：需要向作者索取
+- **Rushia LoRA 適配器**：需要向作者索取/google drive
   - 📧 **聯絡作者獲取 LoRA 模型文件**
   - 檔案格式：`.safetensors` 或 `.bin`
   - 此 LoRA 基於 Qwen3-8B 訓練，包含露西亞的個性和語言風格
