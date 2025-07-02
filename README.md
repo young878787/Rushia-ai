@@ -1,6 +1,6 @@
 # Rushia-ai 🌸 露西亞 AI 聊天系統
 
-- 前情提要 以下都是Ai生的使用手冊可能會有小問題 有問題都可以上DC問我 
+- 前情提要 以下都是Ai產生的使用手冊可能會有小問題 有問題都可以上DC問我 
 - 我的群組: https://discord.gg/UxwTqpvepr 
 - threeds:https://www.threads.com/@young20160124
 - email:young20160124@gmail.com
