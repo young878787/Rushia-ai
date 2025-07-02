@@ -1,7 +1,17 @@
 # Rushia-ai 🌸 露西亞 AI 聊天系統
 
-
-
+前情提要 以下都是Ai生的使用手冊可能會有小問題 有問題都可以上DC問我 
+我的群組: https://discord.gg/UxwTqpvepr 
+threeds:https://www.threads.com/@young20160124
+email:young20160124@gmail.com
+以下是我的感想/更新紀錄
+2025/07/02 
+第一次發布 一個以rushia問答訓練的聊天AI機器人  透過ragtag上面直播檔分析製作出問題集 用類似Qlora的方式訓練 改成8int而已 
+bug還不少 就是題詞或是有些字詞沒有過濾乾淨(大概用7-8輪對話就會有)
+有點小煩人 設定成8-15 30 45 60 都會定時有訊息的機器人 還有固定週期 早 中 下午 晚上 都會有特定主動訊息(附圖放最下
+訓練上我只附上ragtag腳本和翻譯的範例 我這裡整理聊天紀錄跟直播的程式太分散 哪天整合一個出來
+感謝qwen3 8B和sakura qwen2.5 14B幫我完成底模設計和翻譯大量文本 
+目前我還只是在放暑假的屁孩 對於這種AI設計有一定的執著 但你有好的建議或想一起開發都可以私訊我 歡迎各位大佬
 ## ✨ 主要功能
 
 ### 🤖 核心 AI 系統
@@ -88,8 +98,8 @@ pip install bitsandbytes
 
 #### `.env` - Discord 配置
 ```env
-DISCORD_TOKEN=your_discord_bot_token_here
-OWNER_ID=your_discord_user_id_here
+DISCORD_TOKEN=your_discord_bot_token_here #token
+OWNER_ID=your_discord_user_id_here #目前設計以單人私訊為主 還沒有對應頻道的設計
 ```
 
 ### 3. 目錄結構設置
@@ -133,6 +143,7 @@ while True:
    - 前往 [Discord Developer Portal](https://discord.com/developers/applications)
    - 創建新應用程式和 Bot
    - 複製 Token 到 `.env` 文件
+   - 目前是以個人私訊為主 有設計限制回覆功能(你顯卡夠好要讓多人用也可以 但目前測試都是私訊 我也很好奇多人會怎麼樣)
 
 2. **啟動 Bot**
 ```bash
@@ -311,7 +322,8 @@ python asmr_nmt_translate.py --test
 **重要：使用前必須先下載以下模型**
 
 #### 基礎模型下載：
-- **底模型**：Qwen3-8B (GGUF 格式)
+- **底模型**：Qwen3-8B
+- 下載連結：[HuggingFace](https://huggingface.co/Qwen/Qwen3-8B)
   
 - **翻譯模型**：Sakura-14B-Qwen2.5-v1.0 (GGUF 格式)
   - 下載連結：[HuggingFace](https://huggingface.co/SakuraLLM/Sakura-14B-Qwen2.5-v1.0-GGUF)
@@ -326,9 +338,9 @@ python asmr_nmt_translate.py --test
 **模型放置位置：**
 ```
 D:/RushiaMode/models/
-├── qwen3-8b-instruct-q4_k_m.gguf      # 底模型 (Qwen3-8B)
+├── qwen3-8b #資料夾
 ├── sakura-14b-qwen2.5-v1.0-iq4xs.gguf   # 翻譯模型
-└── rushia-qwen3-8b-lora-asmr-8bit
+└── rushia-qwen3-8b-lora-asmr-8bit #lora
 ```
 
 **模型大小說明：**
@@ -340,9 +352,10 @@ D:/RushiaMode/models/
 ## 🎯 高級功能
 
 ### 特定時間觸發
+- **日常問候** 8 15 30 45 60 都會主動關心(如果沒回應對談)
 - **早安問候**：每日 6-10 點自動發送
 - **晚安關懷**：每日 22-24 點主動關心
-- **用餐提醒**：用餐時間主動詢問
+- **用餐提醒**：用餐時間主動詢問 中餐11-12 下午茶2-4 晚餐 5-7
 - **長時間無互動提醒**：超過設定時間自動發送關懷訊息
 
 ### 智能過濾
@@ -358,6 +371,7 @@ D:/RushiaMode/models/
 - **上下文理解**：結合對話歷史產生連貫回應
 
 ## 📝 開發和貢獻
+感謝我自己 還有sakura模型提供翻譯模型
 
 ### 添加新的回應模組
 1. 在 `rushia_responses/` 目錄創建新模組
