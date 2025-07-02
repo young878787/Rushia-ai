@@ -1,18 +1,20 @@
 # Rushia-ai 🌸 露西亞 AI 聊天系統
 
-前情提要 以下都是Ai生的使用手冊可能會有小問題 有問題都可以上DC問我 
-我的群組: https://discord.gg/UxwTqpvepr 
-threeds:https://www.threads.com/@young20160124
-email:young20160124@gmail.com
-以下是我的感想/更新紀錄
-2025/07/02 
+- 前情提要 以下都是Ai生的使用手冊可能會有小問題 有問題都可以上DC問我 
+- 我的群組: https://discord.gg/UxwTqpvepr 
+- threeds:https://www.threads.com/@young20160124
+- email:young20160124@gmail.com
+- 以下是我的感想/更新紀錄
+- 2025/07/02 
 第一次發布 一個以rushia問答訓練的聊天AI機器人  透過ragtag上面直播檔分析製作出問題集 用類似Qlora的方式訓練 改成8int而已 
 bug還不少 就是題詞或是有些字詞沒有過濾乾淨(大概用7-8輪對話就會有)
-有點小煩人 設定成8-15 30 45 60 都會定時有訊息的機器人 還有固定週期 早 中 下午 晚上 都會有特定主動訊息(附圖放最下
+-有點小煩人 設定成8-15 30 45 60 都會定時有訊息的機器人 還有固定週期 早 中 下午 晚上 都會有特定主動訊息(附圖放最下
 訓練上我只附上ragtag腳本和翻譯的範例 我這裡整理聊天紀錄跟直播的程式太分散 哪天整合一個出來
 感謝qwen3 8B和sakura qwen2.5 14B幫我完成底模設計和翻譯大量文本 
 目前我還只是在放暑假的屁孩 對於這種AI設計有一定的執著 但你有好的建議或想一起開發都可以私訊我 歡迎各位大佬
-## ✨ 主要功能
+## 一些範例圖檔
+![image](https://github.com/user-attachments/assets/f24ded5d-8809-4ade-84fc-950fb6cedff3)
+![image](https://github.com/user-attachments/assets/d080b9aa-65af-4477-a092-e3bd27032d76)
 
 ### 🤖 核心 AI 系統
 - **LoRA 微調模型**：基於 Qwen 等大型語言模型進行露西亞專用訓練
